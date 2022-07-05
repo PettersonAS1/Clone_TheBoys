@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Clone The Boys</title>
+</head>
+
+<body>
+    <div class="info-area">
+        <div class="buttons-info" id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Todos</button>
+            <button class="btn"
+                onclick="filterSelection('vought');imgSlider('./assets/img/edgar.png'); 
+                        changeTextH1('STAN EDGAR'); 
+                        changeTextP('Stan Edgar iniciou sua carreira como associado da “Vought American” em 1984. Calmo, focado, mas impiedoso, ele se tornou o presidente da Vought International dos dias de hoje. Como praticamente a única pessoa que não tem medo do Capitão Pátria, Edgar é um manipulador de cabeça fria com um passado nebuloso. Ele faz de tudo pelo futuro da Vought – custe o que custar.')">
+                Vought</button>
+            <button class="btn"
+                onclick="filterSelection('sete');imgSlider('./assets/img/estelar.png'); 
+                        changeTextH1('LUZ ESTRELA'); 
+                        changeTextP('Apesar de tudo pelo que passou, Annie January ainda é muito realista e sincera, uma garota da vizinhança, só que com superpoderes. Atualmente, ela é uma das favoritas entre os super-heróis, com um índice de aprovação de 96%, um novo recorde para a Vought. Mas a popularidade, os números das pesquisas e apoio de marca não significam nada para ela, porque o que ela mais quer é o que sempre quis: salvar o mundo.')">Os
+                Sete</button>
+
+        </div>
+        <div class="text-area">
+            <h1 class="text-h1">STAN EDGAR</h1>
+            <p class="text-p">Stan Edgar iniciou sua carreira como associado da “Vought American” em 1984. Calmo,
+                focado, mas
+                impiedoso, ele se tornou
+                o presidente da Vought International dos dias de hoje. Como praticamente a única pessoa que não tem medo
+                do Capitão
+                Pátria, Edgar é um manipulador de cabeça fria com um passado nebuloso. Ele faz de tudo pelo futuro da
+                Vought – custe o
+                que custar.</p>
+        </div>
+        <div class="profile-photos">
+            <ul class="profile-list">
+                <li class="filterDiv vought"> <img src="./assets/img/edgar-profile.jpg"
+                        onclick="imgSlider('./assets/img/edgar.png'); 
+                        changeTextH1('STAN EDGAR'); 
+                        changeTextP('Stan Edgar iniciou sua carreira como associado da “Vought American” em 1984. Calmo, focado, mas impiedoso, ele se tornou o presidente da Vought International dos dias de hoje. Como praticamente a única pessoa que não tem medo do Capitão Pátria, Edgar é um manipulador de cabeça fria com um passado nebuloso. Ele faz de tudo pelo futuro da Vought – custe o que custar.')">
+                </li>
+                <li class="filterDiv vought"> <img src="./assets/img/ashley-profile.jpg"
+                        onclick="imgSlider('./assets/img/ashley.png'); 
+                        changeTextH1('ASHLEY BARRETT'); 
+                        changeTextP('Ashley trabalhou duro no último ano. Ela ainda é a Vice-Presidente de Gerenciamento de Heróis da Vought, mas sua responsabilidade principal é o Capitão Pátria. Mas, desde as notícias sobre Tempesta no ano passado e com os índices de aprovação do Capitão Pátria caindo vertiginosamente, Ashley teve de gerenciar a publicidade volátil do herói e também se esquivar do temperamento bombástico dele.')">
+                </li>
+                <li class="filterDiv sete"> <img src="./assets/img/estelar-profile.jpg"
+                        onclick="imgSlider('./assets/img/estelar.png'); 
+                        changeTextH1('LUZ ESTRELA'); 
+                        changeTextP('Apesar de tudo pelo que passou, Annie January ainda é muito realista e sincera, uma garota da vizinhança, só que com superpoderes. Atualmente, ela é uma das favoritas entre os super-heróis, com um índice de aprovação de 96%, um novo recorde para a Vought. Mas a popularidade, os números das pesquisas e apoio de marca não significam nada para ela, porque o que ela mais quer é o que sempre quis: salvar o mundo.')">
+                </li>
+                <li class="filterDiv sete"> <img src="./assets/img/patria-profile.jpg"
+                        onclick="imgSlider('./assets/img/patria.png'); 
+                        changeTextH1('CAPITÃO PÁTRIA'); 
+                        changeTextP('Desde a divulgação sobre o passado nazista de Tempesta, o Capitão Pátria não tem feito nada além de se desculpar. Agora seus índices de aprovação estão no esgoto, e pior de tudo, ele tem precisado ser bonzinho com todos após a Rainha Maeve chantageá-lo com o vídeo do voo 37. Mas o homem mais poderoso do mundo está farto de ser controlado... e é só uma questão de tempo até sua raiva explodir.')">
+                </li>
+                <li class="filterDiv sete"> <img src="./assets/img/noir-profile.jpg"
+                        onclick="imgSlider('./assets/img/noir.png'); 
+                        changeTextH1('BLACK NOIR'); 
+                        changeTextP('Silencioso, invisível e enigmático. Black Noir é o superpoderoso ninja dos Sete. Sua superforça e sentidos aguçados só são equiparados por sua eficiência nas artes marciais. Pouco se sabe sobre esse guerreiro letal, apenas que ele foi treinado por um mestre sensei para se tornar um comissário da morte. O que está por trás da máscara é um completo mistério – o que apenas o torna mais aterrorizante.')">
+                </li>
+            </ul>
+        </div>
+        <div class="banner-image">
+            <img src="./assets/img/edgar.png" class="random-image">
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
