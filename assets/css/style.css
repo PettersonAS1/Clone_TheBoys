@@ -78,13 +78,13 @@ ul.profile-list {
     margin: 0 45px 0 0;
 }
 
-/* .show {
+.show {
     display: block;
 }
 
 .filterDiv {
     display: none;
-} */
+}
 
 .btn.active {
     background-color: #F2F4F6;
